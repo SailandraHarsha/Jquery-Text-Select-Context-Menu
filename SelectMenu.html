@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Word Cloud</title>
+        <script src="Resources/bootstrap/js/jquery-3.3.1.js"></script>
+        <script src="Resources/bootstrap/js/popper.min.js"></script>
+        <script src="Resources/bootstrap/js/bootstrap.min.js"></script>
+        <link href="Resources/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="Resources/GetSelectedText.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+               
+            });
+            function ClearAll() {
+            document.getElementById('Quotediv').style.display = 'none';
+            if (window.getSelection) {
+                if (window.getSelection().empty) {  //Chrome
+                    window.getSelection().empty();
+                } else if (window.getSelection().removeAllRanges) {  //Firefox
+                    window.getSelection().removeAllRanges();
+                }
+            } else if (document.selection) {  //IE?
+                document.selection.empty();
+            }
+            $("#divAllButtons").show(200);
+            $("#divAddAnnoText, #divFolderSelect, #divReportSelect").hide(200);
+        }
+        </script>
+        <style type="text/css">
+            #cal1 {
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            top: 100px;
+            left: 100px;
+            overflow: none;
+            z-index: -100;
+        }
+
+        #cal2 {
+            position: absolute;
+            height: 0px;
+            width: 0px;
+            top: 0px;
+            left: 0px;
+            overflow: none;
+            z-index: -100;
+        }
+        #Quotediv {
+            position: absolute;
+            display: none;
+            border: grey solid 1px;
+            background: white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid" id="divText">
+            Early life and exploits
+
+Shivaji was descended from a line of prominent nobles. India at that time was under Muslim rule: the Mughals in the north and the Muslim sultans of Bijapur and Golconda in the south. All three ruled by right of conquest, with no pretense that they had any obligations toward those who they ruled. Shivaji, whose ancestral estates were situated in the Deccan, in the realm of the Bijapur sultans, found the Muslim oppression and religious persecution of the Hindus so intolerable that, by the time he was 16, he convinced himself that he was the divinely appointed instrument of the cause of Hindu freedom—a conviction that was to sustain him throughout his life.
+
+Collecting a band of followers, he began about 1655 to seize the weaker Bijapur outposts. In the process, he destroyed a few of his influential coreligionists, who had aligned themselves with the sultans. All the same, his daring and military skill, combined with his sternness toward the oppressors of the Hindus, won him much admiration. His depredations grew increasingly audacious, and several minor expeditions sent to chastise him proved ineffective.
+
+When the sultan of Bijapur in 1659 sent an army of 20,000 under Afẕal Khan to defeat him, Shivaji, pretending to be intimidated, enticed the force deep into difficult mountain terrain and then killed Afẕal Khan at a meeting to which he had lured him by submissive appeals. Meanwhile, handpicked troops that had been previously positioned swooped down on the unwary Bijapur army and routed it. Overnight, Shivaji had become a formidable warlord, possessing the horses, the guns, and the ammunition of the Bijapur army.
+
+Alarmed by Shivaji’s rising strength, the Mughal emperor Aurangzeb ordered his viceroy of the south to march against him. Shivaji countered by carrying out a daring midnight raid right within the viceroy’s encampment, in which the viceroy lost the fingers of one hand and his son was killed. Discomfited by this reverse, the viceroy withdrew his force. Shivaji, as though to provoke the Mughals further, attacked the rich coastal town of Surat and took immense booty.
+
+Aurangzeb could hardly ignore so flaunting a challenge and sent out his most prominent general, Mirza Raja Jai Singh, at the head of an army said to number some 100,000 men. The pressure that was exerted by this vast force, combined with the drive and tenacity of Jai Singh, soon compelled Shivaji to sue for peace and to undertake that he and his son would attend Aurangzeb’s court at Agra in order to be formally accepted as Mughal vassals. In Agra, hundreds of miles from their homeland, Shivaji and his son were placed under house arrest, where they lived under the threat of execution.
+
+Escape from Agra
+
+Undaunted, Shivaji feigned illness and, as a form of penance, began to send out enormous baskets filled with sweets to be distributed among the poor. On August 17, 1666, he and his son had themselves carried past their guards in these baskets. His escape, possibly the most thrilling episode in a life filled with high drama, was to change the course of Indian history. His followers welcomed him back as their leader, and within two years he not only had won back all the lost territory but had expanded his domain. He collected tribute from Mughal regions and plundered their rich cities; he reorganized the army and instituted reforms for the welfare of his subjects. Taking a lesson from the Portuguese and English traders who had already gained toeholds in India, he began the building of a naval force; he was the first Indian ruler of his time to use his sea power for trade as well as for defense.
+
+Almost as though prodded by Shivaji’s meteoric rise, Aurangzeb intensified his persecution of Hindus; he imposed a poll tax on them, connived at forcible conversions, and demolished temples, erecting mosques in their places.
+
+Independent sovereign
+
+In the summer of 1674, Shivaji had himself enthroned with great fanfare as an independent sovereign. The suppressed Hindu majority rallied to him as their leader. He ruled his domain for six years, through a cabinet of eight ministers. A devout Hindu who prided himself as the protector of his religion, he broke tradition by commanding that two of his relatives, who had been forcibly converted to Islam, should be taken back into the Hindu fold. Yet even though both Christians and Muslims often imposed their creeds on the populace by force, he respected the beliefs and protected the places of worship of both communities. Many Muslims were in his service. After his coronation, his most noteworthy campaign was in the south, during which he forged an alliance with the sultans and thereby blocked the grand design of the Mughals to spread their rule over the entire subcontinent.
+
+Shivaji had several wives and two sons. His last years were shadowed by the apostasy of his elder son, who, at one stage, defected to the Mughals and was brought back only with the utmost difficulty. The strain of guarding his kingdom from its enemies in the face of bitter domestic strife and discord among his ministers hastened his end. The man that British politician and author Thomas Babington Macaulay (later Baron Macaulay of Rothley) called “the Great Shivaji” died after an illness in April 1680, in the mountain stronghold of Rajgarh, which he had made his capital.
+
+Shivaji breathed new life into a moribund race that for centuries had resigned itself to abject serfdom and led them against Aurangzeb, a powerful Mughal ruler. Above all, in a place and age stained by religious savagery, he was one of few rulers who practiced true religious tolerance.
+        </div>
+        
+        <div id="cal1">&nbsp;</div>
+        <div id="cal2">&nbsp;</div>
+        <div class="card border-dark" style="width: 40%; z-index: 99;" id="Quotediv">
+            <div class="card-header">
+                <div class="row">
+                    <div class="col-6 float-left">Use Selected Text For:</div>
+                    <div class="col-6">
+                        <div class="btn-group btn-group-sm float-right">
+                            <span class="btn btn-primary" onclick="SwitchHTMLtoTEXT('HTML');">Formatted</span>
+                            <span class="btn btn-primary" onclick="SwitchHTMLtoTEXT('TEXT');">Regular</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-body text-dark" id="TextSelectedRe"></div>
+            <div class="card-footer text-center">
+                <div id="divAllButtons" class="btn-group btn-group-sm">
+                    <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Annotate" onclick="GetCopyTextJQ('0');"><i class="fas fa-thumbtack fa-Space-right"></i>Annotate</button>
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Add To Folder" onclick="GetCopyTextJQ('1');"><i class="fas fa-folder-plus fa-Space-right"></i>Folder</button>
+                    <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Add To Report" onclick="GetCopyTextJQ('2');"><i class="fas fa-receipt fa-Space-right"></i>Reports</button>
+                    <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Export As Doc" onclick="GetCopyTextJQ('3');"><i class="fas fa-file-download fa-Space-right"></i>Export As Doc</button>
+                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Clear,Cancel and Close" onclick="ClearAll();"><i class="fas fa-window-close fa-Space-right"></i>Cancel</button>
+                </div>
+                <div class="container-fluid" id="divAddAnnoText">
+                    <div class="row">
+                        <div class="col-8">
+                            <input id="txtAnnotationText" type="text" class="form-control" placeholder="Type Annotation text here" />
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-success btn-sm" onclick="AddAnnotation();"><i class="fas fa-plus-square fa-Space-right"></i>Add</button>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="CancelAddAnnotation();"><i class="fas fa-window-close fa-Space-right"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="divFolderSelect">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="btn-group btn-sm" role="group" aria-label="Basic example">
+                                <span class="btn btn-primary btn-sm" onclick="GetFolderList('User_Folder');">User</span>
+                                <span class="btn btn-info btn-sm" onclick="GetFolderList('Collation_Folder');">Collation</span>
+                                <span class="btn btn-secondary btn-sm" onclick="GetFolderList('Shared_Folder');">Shared</span>
+                            </div>
+                        </div>
+                        <div class="col-12" id="divTreeData">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-success btn-sm" onclick="AddToFolder();"><i class="fas fa-plus-square fa-Space-right"></i>Add Selected Text to folder(s)</button>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="CancelAddToFolder();"><i class="fas fa-window-close fa-Space-right"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid" id="divReportSelect">
+                    <div class="row">
+                        <div class="col-12" id="divReportDetails">
+                            Select Report panal
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button id="btnFinalAddToReport" type="button" class="btn btn-success btn-sm" onclick="AddReportContent();"><i class="fas fa-plus-square fa-Space-right"></i>Add Selected Text to Report</button>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="CancelAddToReport();"><i class="fas fa-window-close fa-Space-right"></i>Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+    </body>
+</html>
